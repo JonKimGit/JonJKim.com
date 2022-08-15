@@ -134,7 +134,7 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 30%;
+    width: 50%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
@@ -199,21 +199,22 @@ img {
 /*===== LANDING =====*/
 
 .landing-img {
-  padding: 10%;
+  padding: 10% 10% 20%;
 }
 
 /*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 5rem;
-  padding: 4rem 0 5rem;
+  padding: 0 0 5rem;
   margin-left: 3%;
   margin-right: 3%;
+  height: 100vh;
 }
 
 .home__data {
   align-self: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .home__title {
