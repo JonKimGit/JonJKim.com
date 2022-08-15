@@ -490,7 +490,7 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .home {
     row-gap: 2rem;
   }
