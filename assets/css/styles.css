@@ -296,7 +296,7 @@ img {
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
-  text-align: center;
+  max-width: 95%;
 }
 
 .about__subtitle {
@@ -305,8 +305,7 @@ img {
 }
 
 .about__img {
-  justify-self: right;
-  padding-right: 8%;
+  padding-right: 1%;
 }
 
 .about__img img {
@@ -330,19 +329,18 @@ img {
   align-items: center;
   position: relative;
   font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 0;
   width: 15%;
 }
 
 .skills__type {
   font-weight: 600;
-  padding-right: 15px;
+  padding-right: 10px;
   padding-left: 5px;
 }
 
 .skills__icon {
-  font-size: 2rem;
+  font-size: 25px;
   color: var(--first-color);
 }
 
@@ -352,7 +350,7 @@ img {
 }
 
 .skills__name {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 /*==================== PORTFOLIO ====================*/
@@ -493,6 +491,16 @@ img {
   .home {
     row-gap: 2rem;
   }
+  .about__img img {
+    height: 200px;
+    width: 295px;
+  }
+  .about__text {
+    width: 90%;
+  }
+  .skills__container {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -509,14 +517,15 @@ img {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
-  .home__img {
-    width: 300px;
-    bottom: 25%;
-  }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
+    width: 80%;
+  }
+  .about__img {
+    margin-right: 15px;
+    margin-left: 50px;
   }
   .skills__container {
     grid-template-columns: 0.7fr;
@@ -574,6 +583,7 @@ img {
   }
   .about__container {
     padding-top: 2rem;
+    width: 90%;
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
@@ -595,16 +605,20 @@ img {
   .home {
     padding: 10rem 0 2rem;
   }
-  .home__img {
-    width: 450px;
+  .about__container {
+    max-width: 70%;
+  }
+  .nav {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 30px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -614,7 +628,7 @@ img {
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 15px; /* Increase font size */
 }
 
 #myBtn:hover {
