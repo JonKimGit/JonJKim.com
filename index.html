@@ -200,9 +200,9 @@
 
         <div class="contact__container bd-grid">
           <form id="myForm" action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" name="user_name"/>
-            <input type="email" placeholder="Email" class="contact__input" name="user_email" />
-            <input type="subject" placeholder="Subject" class="contact__input" name="subject" />
+            <input type="name" placeholder="Name" class="contact__input" name="name" id="name"/>
+            <input type="email" placeholder="Email" class="contact__input" name="email" id="email"/>
+            <input type="text" placeholder="Subject" class="contact__input" name="subject" id="subject"/>
             <textarea
               class="contact__input"
               placeholder="Message"
@@ -256,7 +256,7 @@
     .getElementById("myForm")
     .addEventListener("submit", function (event) {
       event.preventDefault();
-      const serviceID = "Website_Contact_Form";
+      const serviceID = "Contact Form";
       const templateID = "template_lyk8qkg";
       // send the email here
       emailjs.sendForm(serviceID, templateID, this).then(
