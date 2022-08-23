@@ -199,14 +199,14 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <input type="subject" placeholder="Subject" class="contact__input" />
+          <form ic="contact-form" action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" name="user_name"/>
+            <input type="mail" placeholder="Email" class="user_email" />
+            <input type="subject" placeholder="Subject" class="contact__input" name="subject" />
             <textarea
               class="contact__input"
               placeholder="Message"
-              name=""
+              name="message"
               id=""
               cols="0"
               rows="8"
@@ -239,6 +239,32 @@
     <script>
         AOS.init();
     </script>
+
+<!--=========== emailJS ===========-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('mZX9bZ2w_ykRy2-Ky');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('Website Contact Form', 'template_0s87k7k', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+                                      
 
 <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
