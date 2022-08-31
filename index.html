@@ -259,7 +259,7 @@
       emailjs.sendForm(serviceID, templateID, this).then(
         (response) => {
           console.log("Your message was sent", response.status, response.text);
-          alert("SUCCESS!");
+          alert("Your message was sent");
         },
         (error) => {
           console.log("FAILED...", error);
