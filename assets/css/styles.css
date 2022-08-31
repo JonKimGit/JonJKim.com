@@ -4,19 +4,19 @@
 :root {
   --header-height: 3rem;
   --font-semi: 500;
-  /*===== Colores =====*/
+  /*===== Colors =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 0;
   --first-color: hsl(var(--hue-color), 0%, 20%);
   --second-color: hsl(var(--hue-color), 0%, 60%);
-  /*===== Fuente y tipografia =====*/
+  /*===== Fonts =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --smaller-font-size: 0.75rem;
-  /*===== Margenes =====*/
+  /*===== Margins =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
@@ -180,7 +180,7 @@ img {
   font-size: 1rem;
 }
 
-/*Active menu*/
+/*===== Active menu =====*/
 .active::after {
   position: absolute;
   content: "";
@@ -191,7 +191,7 @@ img {
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
+/*===== Show menu =====*/
 .show {
   right: 0;
 }
@@ -237,7 +237,7 @@ img {
   color: var(--first-color);
 }
 
-/*BUTTONS*/
+/*===== BUTTONS =====*/
 .button {
   display: inline-block;
   background-color: var(--second-color);
@@ -293,7 +293,7 @@ img {
   color: var(--first-color);
 }
 
-/* ===== ABOUT =====*/
+/*===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
   max-width: 95%;
@@ -318,7 +318,7 @@ img {
   color: var(--second-color);
 }
 
-/* ===== SKILLS =====*/
+/*===== SKILLS =====*/
 .skills__container {
   margin-top: 15px;
 }
@@ -353,7 +353,7 @@ img {
   margin-right: 10px;
 }
 
-/*==================== PORTFOLIO ====================*/
+/*===== PORTFOLIO =====*/
 
 .grid {
   display: grid;

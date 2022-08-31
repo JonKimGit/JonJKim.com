@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-<!-- =====BOX ICONS===== -->
+<!--===== BOX ICONS =====-->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
@@ -71,13 +71,10 @@
 
           <div class="about__info">
             <h2 class="about__subtitle">Hi, I'm Jon <br>
-              <span class="about__text">Front-end Engineer</span>
+              <span class="about__text">Software Engineer</span>
             </h2>
             <p class="about__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
-              ut voluptates soluta, aut earum nemo recusandae cumque
-              perferendis! Recusandae alias accusamus atque.
+            Full-stack capable, front-end specialized, focused on UI/UX. Experienced in designing, building, and maintaining responsive web-sites and applications.
             </p>
             <div class="skills__container">
             <div class="skills__data">
@@ -125,7 +122,7 @@
         </div>
       </section>
 
-<!--==================== PORTFOLIO ====================-->
+<!--===== PORTFOLIO =====-->
 
 <section class="portfolio section" id="portfolio" >
   <h2 class="section-title">Projects</h2>
@@ -233,13 +230,13 @@
 <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-<!--=========== AOS ===========-->
+<!--===== AOS =====-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-<!--=========== emailJS ===========-->
+<!--===== emailJS =====-->
 <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
@@ -261,7 +258,7 @@
       // send the email here
       emailjs.sendForm(serviceID, templateID, this).then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+          console.log("Your message was sent", response.status, response.text);
           alert("SUCCESS!");
         },
         (error) => {

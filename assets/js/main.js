@@ -11,7 +11,7 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav-menu");
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -21,7 +21,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -61,7 +61,7 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 sr.reveal(".home__social-icon", { interval: 100 });
 sr.reveal(".skills__data, .work__img, .contact__input", { interval: 100 });
 
-/*==================== PORTFOLIO MODAL ====================*/
+/*===== PORTFOLIO MODAL =====*/
 const modalViews = document.querySelectorAll(".portfolio__modal"),
   modalBtns = document.querySelectorAll(".portfolio__button"),
   modalCloses = document.querySelectorAll(".portfolio__modal-close");
@@ -87,7 +87,7 @@ modalCloses.forEach((modalClose) => {
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+//When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -100,7 +100,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+//When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
