@@ -514,9 +514,15 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 576px) {
   .home {
     row-gap: 2rem;
+  }
+  .about {
+    height: 600px;
+  }
+  .about__container {
+    padding-left: 15%;
   }
   .about__img img {
     height: 200px;
