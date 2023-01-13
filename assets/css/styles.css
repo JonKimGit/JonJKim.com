@@ -104,7 +104,7 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 70%;
+  max-width: 1024px;
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -118,6 +118,7 @@ img {
   z-index: var(--z-fixed);
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  padding: 0 4%;
 }
 
 /*===== NAV =====*/
@@ -199,13 +200,14 @@ img {
 /*===== LANDING =====*/
 
 .landing-img {
-  padding: 10% 10% 20% 10%;
+  padding: 20% 10% 20% 10%;
 }
 
 /*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 5rem;
+  padding: 0 0 5rem;
   margin-left: 3%;
   margin-right: 3%;
   height: 100vh;
@@ -458,6 +460,10 @@ img {
 
 /* ===== CONTACT =====*/
 
+.contact__container {
+  padding: 0 5%;
+}
+
 .contact__input {
   width: 100%;
   font-family: "poppins";
@@ -518,6 +524,7 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
   .home {
     row-gap: 2rem;
   }
@@ -577,7 +584,6 @@ img {
     padding-top: 1rem;
   }
   .contact__form {
-    width: 600px;
     padding-top: 1rem;
   }
   .contact__container {
@@ -655,9 +661,6 @@ img {
   }
   .about__img {
     margin-left: auto;
-  }
-  .contact__form {
-    width: 600px;
   }
 }
 
