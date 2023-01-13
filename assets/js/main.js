@@ -21,7 +21,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+/*===== SCROLL SECTIONS ACTIVE LINK =====*
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -43,7 +43,7 @@ function scrollActive() {
     }
   });
 }
-window.addEventListener("scroll", scrollActive);
+window.addEventListener("scroll", scrollActive);/
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
