@@ -362,7 +362,7 @@ img {
 .tools-container {
   display: flex;
   align-self: center;
-  margin: 0 10%;
+  margin: 0 8%;
 }
 
 .tools .box-container {
@@ -373,7 +373,7 @@ img {
 }
 
 .tools .box-container .box {
-  margin: 50px 70px;
+  margin: 50px 80px;
   width: 100px;
   height: auto;
 }
@@ -461,7 +461,7 @@ img {
 /* ===== CONTACT =====*/
 
 .contact__container {
-  padding: 0 5%;
+  padding: 0 30px;
 }
 
 .contact__input {
