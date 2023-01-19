@@ -362,7 +362,7 @@ img {
 .tools-container {
   display: flex;
   align-self: center;
-  margin: 0 8%;
+  margin: 0 9%;
 }
 
 .tools .box-container {
@@ -391,8 +391,8 @@ img {
 
 .portfolio-container {
   align-self: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 .portfolio .box-container {
