@@ -662,11 +662,6 @@ img {
   .about__img {
     margin-left: auto;
   }
-  .tools-container {
-    display: flex;
-    align-self: center;
-    margin: 0 12%;
-  }
 }
 
 #myBtn {
