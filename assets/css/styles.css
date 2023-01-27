@@ -279,15 +279,15 @@ img {
 
 @keyframes updown {
   0% {
-    transform: translateY(-20%);
+    transform: translateY(-30%);
   }
 
   50% {
-    transform: translateY(20%);
+    transform: translateY(30%);
   }
 
   100% {
-    transform: translateY(-20%);
+    transform: translateY(-30%);
   }
 }
 
@@ -390,8 +390,8 @@ img {
 
 .portfolio-container {
   align-self: center;
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .portfolio .box-container {
@@ -462,6 +462,7 @@ img {
 
 .contact__container {
   padding: 0 30px;
+  max-width: 600px;
 }
 
 .contact__input {
@@ -585,9 +586,6 @@ img {
   }
   .contact__form {
     padding-top: 1rem;
-  }
-  .contact__container {
-    justify-items: center;
   }
   .tools-container {
     display: flex;
