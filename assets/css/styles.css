@@ -51,6 +51,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  user-select: none;
 }
 
 h1,
@@ -303,7 +304,7 @@ img {
 }
 
 .about__container {
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .about__subtitle {
@@ -334,7 +335,6 @@ img {
   position: relative;
   font-weight: var(--font-semi);
   padding: 0.5rem 0;
-  width: 15%;
 }
 
 .skills__type {
@@ -350,6 +350,7 @@ img {
 
 .skills__names {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -362,7 +363,6 @@ img {
 .tools-container {
   display: flex;
   align-self: center;
-  margin: 0 8%;
 }
 
 .tools .box-container {
@@ -373,9 +373,8 @@ img {
 }
 
 .tools .box-container .box {
-  margin: 50px 80px;
+  margin: 50px 50px;
   width: 100px;
-  height: auto;
 }
 
 /*===== PORTFOLIO =====*/
@@ -589,6 +588,13 @@ img {
   .contact__container {
     justify-items: center;
   }
+  .tools-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 500px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -640,7 +646,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
-    text-align: initial;
   }
   .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
@@ -661,6 +666,23 @@ img {
   }
   .about__img {
     margin-left: auto;
+  }
+  .tools-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .tools-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 1900px;
   }
 }
 
