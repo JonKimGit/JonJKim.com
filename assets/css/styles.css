@@ -408,6 +408,7 @@ img {
   position: relative;
   height: 30rem;
   cursor: pointer;
+  border-radius: 1%;
 }
 
 .portfolio .box-container .box img {
